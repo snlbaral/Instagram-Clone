@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fafafa;
+}
+
+.stories::-webkit-scrollbar-track {
+    height: 2px;
+  }
+  
+  .stories::-webkit-scrollbar {
+    height: 2px;
+  }
+  
+  .stories::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000;
+  }
+
+  .fa-comment-o {
+    transform: scale(-1, 1);
+  }
+
+  .suggestions {
+    position: sticky;
+    right: 0;
+    top: 78px;
+  }
+
+  .img-container {
+    width: 100%;
+    background-position: 0 0;
+    background-size: 454px 618px;
+    -webkit-flex-basis: 454px;
+    -ms-flex-preferred-size: 454px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+    position: relative;
+    background-image: url("../images/instafront.png");
+  }
+
+  .img-container img {
+    height: 427px;
+    right: 63px;
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    /* visibility: visible; */
+    width: 240px;
+    transition: all 0.5s ease-in;
+  }
+
+  .first-img {
+    opacity: 1 !important;
+  }
+
+  .margin-auto {
+    margin: auto !important;
+  }
+
+  .form-container {
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .form-container input {
+    font-size: 12px;
+  }
+
+  .line {
+    height: 1px;
+    flex-grow: 1;
+    background-color: #dbdbdb;
+  }
+
+  .facebook_color {
+    color: #385185;
+  }
+
+  .text-small {
+    font-size: 12px;
+  }
+
+  .login-btn, .submit-btn {
+    background-color: #0095f6;
+  }
+
+  .login-page-link {
+    color: #0095f6;
+  }
+
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
+  button:disabled:hover {
+    background-color: gray;
+  }
+
+  .uploader {
+    min-width: 300px;
+  }
+
+  .rotate-60 {
+    transform: rotate(60deg);
+  }
+
+  .comment-btn, .sec-color {
+    color: #0095f6;
+  }
+
+  .comment-btn:disabled {
+    color: rgba(147, 197, 253, 1) !important;
+    background-color: transparent;
+  }
+
+  .comment-btn:disabled:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn-like {
+    transition: all 0.3s ease-out;
+    animation-duration: 0.3s;
+  }
+
+  .btn-like:hover {
+    transition: all 0.2s ease-out;
+  }
+
+  @keyframes scaleIt {
+    0%{
+      transform: scale(1.0);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }
